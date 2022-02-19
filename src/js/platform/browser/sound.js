@@ -27,7 +27,7 @@ class SoundSpritesContainer {
             }),
             new Promise(resolve => {
                 this.howl = new Howl({
-                    src: cachebust("res/sounds/sfx.mp3"),
+                    src: cachebust("res_raw/soundssfx.mp3"),
                     sprite: sprites.sprite,
                     autoplay: false,
                     loop: false,
@@ -104,7 +104,7 @@ class MusicInstance extends MusicInstanceInterface {
             }),
             new Promise((resolve, reject) => {
                 this.howl = new Howl({
-                    src: cachebust("res/sounds/music/" + this.url + ".mp3"),
+                    src: cachebust("res_raw/soundsmusic/" + this.url + ".mp3"),
                     autoplay: false,
                     loop: true,
                     html5: true,
